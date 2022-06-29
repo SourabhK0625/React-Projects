@@ -4,9 +4,9 @@ function App()
   const details = 
   [
     {title : "Food" , amount : "80" , date : new Date(2022, 5 ,2) , location : "KLE Tech"},
-    {title : "Travel" , amount : "8000" , date : new Date(2022, 5 ,2) , location : "Kerala"},
-    {title : "Food" , amount : "300" , date : new Date(2022, 5 ,2) , location : "Panjurli"},
-    {title : "Food" , amount : "50" , date : new Date(2022, 5 ,2) , location : "Dharwad"}
+    {title : "Travel" , amount : "8000" , date : new Date(2022, 5 ,12), location : "Kerala"},
+    {title : "Food" , amount : "300" , date : new Date(2022, 5 ,20), location : "Panjurli"},
+    {title : "Food" , amount : "50" , date : new Date(2022, 5 ,22), location : "Dharwad"}
   ];
   return (
     <div>
@@ -22,11 +22,7 @@ function App()
         
         )})
         
-      }
-        
-      
-
-                    
+      }      
     </div>
   );
 }
