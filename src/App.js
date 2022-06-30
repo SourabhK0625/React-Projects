@@ -1,28 +1,34 @@
-import ExpenseItem from "./Component/Expense/ExpenseItem";
-function App() 
-{
-  const details = 
-  [
-    {title : "Food" , amount : "80" , date : new Date(2022, 5 ,2) , location : "KLE Tech"},
-    {title : "Travel" , amount : "8000" , date : new Date(2022, 5 ,12), location : "Kerala"},
-    {title : "Food" , amount : "300" , date : new Date(2022, 5 ,20), location : "Panjurli"},
-    {title : "Food" , amount : "50" , date : new Date(2022, 5 ,22), location : "Dharwad"}
+import React from 'react';
+
+import Expenses from './Component/Expenses/Expenses'
+
+const App = () => {
+  const expenses = [
+    {
+      id: 'e1',
+      title: 'Toilet Paper',
+      amount: 94.12,
+      date: new Date(2020, 7, 14),
+    },
+    { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+    {
+      id: 'e3',
+      title: 'Car Insurance',
+      amount: 294.67,
+      date: new Date(2021, 2, 28),
+    },
+    {
+      id: 'e4',
+      title: 'New Desk (Wooden)',
+      amount: 450,
+      date: new Date(2021, 5, 12),
+    },
   ];
+
   return (
     <div>
       <h2>Let's get started!</h2>
-      {
-        details.map(item =>{
-          return (
-          
-            <ExpenseItem title = {item.title} 
-                     date = {item.date}
-                     amount = {item.amount}
-                     location = {item.location}></ExpenseItem>
-        
-        )})
-        
-      }      
+      <Expenses items={expenses} />
     </div>
   );
 }
