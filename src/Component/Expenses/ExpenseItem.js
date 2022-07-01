@@ -9,7 +9,7 @@ const ExpenseItem = (props) => {
   const [amount , letAmount] = useState(props.amount)
   const clickHandler = () =>
   {
-    letAmount('$100')
+    letAmount('100')
     console.log('Deleted...')
   }
   return (
