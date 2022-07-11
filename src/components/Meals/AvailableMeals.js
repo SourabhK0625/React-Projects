@@ -17,7 +17,7 @@ const DUMMY_MEALS = [
     {
       id: 'm3',
       name: 'Chicken Biryani',
-      description: 'Indian Speacial Rice and Chicken dish submerged under variety of spices',
+      description: 'Indian Special Rice and Chicken dish submerged under variety of spices',
       price: 220,
     },
     {
