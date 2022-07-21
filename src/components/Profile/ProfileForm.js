@@ -5,23 +5,24 @@ import CartContext from '../Cart/CartContext';
 const ProfileForm = () => 
 {
   const crtctx = useContext(CartContext);
+  console.log(crtctx)
   const newPassword = useRef();
   const submitHandler = (event) =>
   {
     event.preventDefault();
     const enteredNewPassword = newPassword.current.value;
-    fetch('https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyCJXTxViMQjMdFrJPUAo4CFUgeDKNENucE' ,
+    fetch('https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyC8PBwyCtCdMh2P_NhHsVvZULyI-4KNNEQ' ,
     {
       method: 'POST',
       body: JSON.stringify(
         {
-        idToken: crtctx.isToken,
+        idToken: crtctx.tokens.token,
         password: enteredNewPassword,
         returnSecureToken: true
       }),
-      headers: {
-        'Context-Type' : 'application/json'
-      }
+      // headers: {
+      //   'Context-Type' : 'application/json'
+      // }
     }).then(res => {
 
     })

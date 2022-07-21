@@ -26,12 +26,12 @@ const AuthForm = () => {
     if (isLogin) 
     {
       url =
-        'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCJXTxViMQjMdFrJPUAo4CFUgeDKNENucE';
+        'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyC8PBwyCtCdMh2P_NhHsVvZULyI-4KNNEQ';
     } 
     else 
     {
       url =
-        'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCJXTxViMQjMdFrJPUAo4CFUgeDKNENucE';
+        'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyC8PBwyCtCdMh2P_NhHsVvZULyI-4KNNEQ';
     }
     fetch(url, {
       method: 'POST',
