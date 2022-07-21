@@ -2,17 +2,17 @@ import { useState } from "react";
 import CartContext from "./CartContext";
 const CartProvider = props =>
 {
-    let [isToken, setIsToken] = useState('');
+    let [isToken, setIsToken] = useState(null);
 
     const userIsLoggedIn = !!isToken;
     const addTokenHandler= (item)=>
     {
-        setIsToken([...isToken , item])
+        setIsToken(item)
     };
 
-    const removeTokenHandler = (item)=>
+    const removeTokenHandler = ()=>
     {
-       setIsToken([]);
+       setIsToken(null);
     };
     const cartContext = 
     {

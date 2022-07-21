@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import CartContext from '../Cart/CartContext';
 import React, {useContext}  from 'react';
 import classes from './MainNavigation.module.css';
-
 const MainNavigation = () => 
 {
   const crtctx = useContext(CartContext);

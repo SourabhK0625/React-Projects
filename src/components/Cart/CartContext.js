@@ -4,8 +4,8 @@ const CartContext = React.createContext(
     {
         items:[],
         isLoggedIn: false,
-        addToken: (item)=>{},
-        removeToken: (id)=> {}
+        addToken: ()=>{},
+        removeToken: ()=> {}
     }
 );
 
