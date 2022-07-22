@@ -1,5 +1,4 @@
 import { Switch, Route ,Redirect } from 'react-router-dom';
-import CartProvider from './components/Cart/CartProvider';
 import Layout from './components/Layout/Layout';
 import UserProfile from './components/Profile/UserProfile';
 import AuthPage from './pages/AuthPage';
