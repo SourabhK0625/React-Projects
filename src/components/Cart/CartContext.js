@@ -2,7 +2,7 @@ import React from "react";
 
 const CartContext = React.createContext(
     {
-        items:[],
+        items:'',
         isLoggedIn: false,
         addToken: ()=>{},
         removeToken: ()=> {}
